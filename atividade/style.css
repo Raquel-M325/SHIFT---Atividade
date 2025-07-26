@@ -1,0 +1,48 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+main section{
+    display: grid;
+    
+}
+
+p a{
+    text-decoration: none;
+    color: #224459;
+    border: 1px solid #224459;
+    padding: 3px;
+}
+
+p{
+    padding: 10px;
+
+}
+
+nav ol li a{
+    text-decoration: none;
+    color: #568fb3;
+
+}
+
+nav ol li{
+    list-style-type: none;
+    background-color: #b0d1e6;
+    
+}
+
+header{  
+    background-image: linear-gradient(to left,#7292A6, #224459 );
+    color: white;
+    padding: 3em;
+    
+}
+
+
+
+
+
