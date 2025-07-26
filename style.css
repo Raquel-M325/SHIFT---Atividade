@@ -1,13 +1,21 @@
 *{
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    
 }
 
 
-
-main section{
+main{
     display: grid;
+    grid-template-areas: 
+    'telaazul lermais programacao programacao amanda'
+    'telaazul lista inscricao natalia henrique'
+    'telaazul larissa inscricao organizacao organizacao'
+    ;
+    gap: 1em;
+    padding: 1em 0;
     
 }
 
@@ -25,24 +33,205 @@ p{
 
 nav ol li a{
     text-decoration: none;
-    color: #568fb3;
+    color: #116092;
 
 }
 
 nav ol li{
     list-style-type: none;
-    background-color: #b0d1e6;
     
 }
 
 header{  
-    background-image: linear-gradient(to left,#7292A6, #224459 );
+    background-image: linear-gradient(to left,#7292A6, #224459);
     color: white;
-    padding: 3em;
+    padding: 5em ;
+    width: 100%;
+    margin: 0;
     
 }
 
 
+footer{
+    background-color: #224459;
+    text-align: center;
+    color: white;
+    padding: 4em 0;
+    margin: 0;
+    width: 100%;
+    
+
+}
+
+section {
+    border: 1px solid white;
+    display: grid;
+    grid-template-areas: 
+    'item1 hora1 hora3'
+    'item1 hora2 hora4'
+    'item2 hora5 hora7'
+    'item2 hora6 hora8'
+    ;
+}
+
+section.a{
+    grid-area: telaazul;
+    background-color: #b0c0ca;
+    height: 100%;
+    padding: 2em;
+    
+}
+
+
+.a nav{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.a nav a{
+    font-size: 60px;
+    
+}
+
+section.b{
+    background-color: rgb(212, 216, 221);
+    grid-area: lermais;
+    padding: 1em 1em 2em;
+    display: block;
+    font-size: 25px;
+
+}
+
+section.c{
+    background-color: rgb(212, 216, 221);
+    grid-area: lista;
+    padding: 1em 3em 2.1em;
+    font-size: 25px;
+
+}
+
+section.d{
+    grid-area: larissa;
+    
+}
+
+div.fechado{
+   
+    grid-area: programacao;
+    font-size: 25px;
+
+
+}
+
+.fechado{
+    background-color:  rgb(212, 216, 221);
+    padding: 1em;
+}
+
+section.e{
+    background-color:  rgb(212, 216, 221);
+}
+
+section.f{
+    grid-area: inscricao;
+    background-color: rgb(212, 216, 221);
+    padding: 2em 1em 3em;
+    font-size: 30px;
+
+
+}
+
+section.g{
+    grid-area: natalia; 
+
+}
+
+section.h{
+    background-color: rgb(212, 216, 221);
+    grid-area: organizacao; 
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+
+.list{
+    padding-left: 2em;
+}
+
+section.i{
+    grid-area: amanda; 
+}
+
+section.j{
+    grid-area: henrique; 
+}
+
+section.x{
+   grid-area: item1; 
+}
+
+section.y{
+    grid-area: item2; 
+
+}
+
+section.hora_a{
+    grid-area: hora1; 
+}
+
+section.hora_b{
+    grid-area: hora2 
+}
+
+section.hora_c{
+    grid-area: hora3; 
+}
+
+section.hora_d{
+    grid-area: hora4; 
+}
+
+section.hora_e{
+    grid-area: hora5; 
+}
+
+section.hora_f{
+    grid-area: hora6; 
+}
+
+section.hora_g{
+    grid-area: hora7; 
+}
+
+section.hora_h{
+    grid-area: hora8; 
+}
+
+form h3{
+    padding-bottom: 1em;
+    
+}
+
+#nome, #celular, #e-mail {
+    padding: 10px;
+}
+
+
+input[type= 'submit']{
+    background-color: rgb(48, 47, 47);
+    color: rgb(94, 94, 94);
+    border: 2px solid rgb(48, 47, 47);
+    padding: 5px 4em;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    
+}
 
 
 
